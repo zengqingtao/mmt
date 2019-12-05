@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "titleNView": false,
+  "usingComponents": {
+    "promise": "/pages/index/promise/promise",
+    "product-options": "/pages/index/productOptions/productOptions"
+  }
+}

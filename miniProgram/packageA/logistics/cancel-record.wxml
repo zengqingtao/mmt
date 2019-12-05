@@ -1,0 +1,75 @@
+<view class='container'>
+    <view class='row node-number'>
+        <view class="text" bindtap="showNumberModel">查看核销商品统计</view>
+        <input disabled="{{screen_show?'disabled':''}}"  class="searchInput {{screen_show?'search-disabled':''}}" value="{{searchValue}}" type='text' bindinput='searchInput' bindconfirm="searchCifim" placeholder='商品名称/取件人/手机号/核销人' placeholder-class="placeholder-font {{screen_show?'placeholder-disabled':''}}">
+            <!--<cover-view class="clear-input" catchtap="clearInput"><cover-image class="clear-img" src="{{iconURL}}/clear-input-cancel.png"></cover-image></cover-view>-->
+        </input>
+    </view>
+    <view class="row searchbox">
+
+        <!--<picker class="pick-box" bindchange="bindPickerChange" value="{{index}}" range-key="pickup_name" range="{{pickerArray}}">-->
+            <!--<view class="row picker-select">-->
+                <!--<view>{{pickerArray[pickerIndex].pickup_name}}</view>-->
+                <!--<view class="iconfont icon-btn_sanjiaoxiaojiantoux"></view>-->
+            <!--</view>-->
+        <!--</picker>-->
+        <picker mode="date" class="dataInpt" value='{{dateValue}}' bindchange="bindTimeChange">
+            <view class="date-num">
+                {{dateValue}}
+            </view>
+        </picker>
+        <view class="number">已核销：<text class="total-num font_60">{{boxOrderInfo.total_num}}</text>件</view>
+    </view>
+    <view class="number right-box">已核销：<text class="total-num font_60">{{boxOrderInfo.countNum}}</text>笔</view>
+    <view class="screen-box" wx:if="{{screen_show}}">
+        <view class="screen-item">
+            <view class="screen-msg">
+                <view class="screen-title">
+                    已筛选:
+                </view>
+                <view class="screen-news">
+                    <view class="goods-name">
+                        {{screem_goods.goods_name}}
+                    </view>
+                    <view class="goods-num">
+                        共<i>{{screem_goods.goods_num}}</i>件
+                    </view>
+                </view>
+            </view>
+            <view class="screen-close">
+                <text class="iconfont icon-btn_qiapianguanbianniux close-icon" bindtap="closeScreen"></text>
+            </view>
+        </view>
+    </view>
+    <view class="list-pad">
+        <view class="list-box" wx:for="{{cancelList}}" wx:key="{{index}}" data-order-sn="{{item.order_sn}}">
+            <view class="list-item">核销人：{{item.operator_user_name}}</view>
+            <view class="list-item">核销数：共计 <text class="total-num">{{item.total_num}}</text>件</view>
+            <view class="list-item">取件人：<i class="color-blue" catchtap='copyText' data-text="{{item.consignee}}" data-title="取件人">{{item.consignee}}</i></view>
+            <view class="list-item">核销时间：{{item.order_confirm_time}}</view>
+            <view class="list-item">手机号：<i class="color-blue" catchtap='copyText' data-text="{{item.mobile}}" data-title="手机号">{{item.mobile}}</i><view  catchtap="onCall" data-mobile="{{item.mobile}}" class="call-icon">拨打电话</view></view>
+            <view class="list-item">核销商品：</view>
+            <view class="goods-list">
+                <view class="row goods-boxs {{num%2==0?'goods-active':''}}" wx:for="{{item.list}}" wx:for-item="goods" wx:for-index="num" wx:key="{{num}}">
+                    <text class="goods-name">{{goods.goods_name}}</text>
+                    <text class="goods-num">x{{goods.goods_num}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="credits-bottom" wx:if="{{cancelList.length>0&&!showBottomLoading}}">~ 到底啦！~</view>
+<loadingBottom wx:if="{{showBottomLoading}}"></loadingBottom>
+
+<view class="drawer_screen" bindtap="hideNumberModel" wx:if="{{numberModelStatus}}" catchtouchmove="bindtouchmove"></view>
+<view class="number-model-box" wx:if="{{numberModelStatus}}" catchtouchmove="bindtouchmove">
+    <view class="header-text">共<i>{{numberList.kindNum}}</i>种商品，总计<i>{{numberList.totalNum}}</i>件</view>
+    <scroll-view class="row model-scroll" scroll-y="true">
+        <view class="row model-list" wx:for="{{numberList.list}}" wx:key="{{index}}" bindtap="showOneSale" data-str="{{item.order_id_str}}" data-item="{{item}}">
+            <text class="list-name">{{item.goods_name}}</text>
+            <text class="list-number">x{{item.goods_num}}</text>
+            <text class="iconfont icon-btn_gerenzhongxinyoujiantoux right-arrow"></text>
+        </view>
+    </scroll-view>
+</view>
+<loading wx:if="{{loadingShow}}"></loading>

@@ -1,0 +1,223 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 轮播图 */
+.swiper-box.data-v-bb5fe61c{
+	width:100%;
+	height:750rpx;
+}
+.swiper-item-img.data-v-bb5fe61c{
+	width:100%;
+	height: 100%;
+}
+/* 商品名称和评论的大盒子 */
+.goodName-market-box.data-v-bb5fe61c,.price-box.data-v-bb5fe61c{
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding:24rpx;
+}
+.goodName.data-v-bb5fe61c{
+	font-size:32rpx;
+	font-weight: 500;
+	line-height: 40rpx;
+	color:#000;
+}
+.goodRemark.data-v-bb5fe61c{
+	font-size:24rpx;
+	color:#aaa;
+	overflow: hidden;
+}
+.productDetail-img.data-v-bb5fe61c{
+	width:100%;
+}
+/* 底部固定按钮 */
+.footFixed-box.data-v-bb5fe61c{
+	width:100%;
+	height:96rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	position:fixed;
+	bottom:0;
+	background-color:#fff;
+}
+/* 左边的首页和客服 */
+.footFixed-left.data-v-bb5fe61c{
+	width:28%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0 19rpx;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+/* 首页按钮 */
+.footFixed-left-index.data-v-bb5fe61c,.footFixed-left-service.data-v-bb5fe61c{
+	width:92rpx;
+	height:100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	position: relative;
+}
+.footFixed-left-indexImg.data-v-bb5fe61c,.footFixed-left-serviceImg.data-v-bb5fe61c{
+	width:54rpx;
+	height:54rpx;
+}
+/* 客服 */
+.footFixed-left-service.data-v-bb5fe61c{
+}
+.footFixed-left-title.data-v-bb5fe61c{
+	font-size:20rpx;
+	color:#000;
+}
+/* 右边的立即购买和一键开团 */
+.footFixed-right.data-v-bb5fe61c{
+	width:72%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-sizing:border-box;
+	        box-sizing:border-box;
+}
+/* 单独购买 */
+.footFixed-right-buy.data-v-bb5fe61c,.footFixed-right-team.data-v-bb5fe61c{
+	height:96rpx;
+	line-height:1.5;
+	color:#fff;
+	font-size:32rpx;
+	padding: 0 10rpx;
+	text-align: center;
+}
+.footFixed-right-buy.data-v-bb5fe61c{
+	width:220rpx;
+	background-color:#303030;
+}
+/* 一键开团 */
+.footFixed-right-team.data-v-bb5fe61c{
+	width:368rpx;
+	color:#303030;
+	background-color:#FFE150;
+}
+.footFixed-right-compnay.data-v-bb5fe61c{
+	font-size:24rpx;
+	margin-right:5rpx;
+}
+.footFixed-right-price.data-v-bb5fe61c{
+	font-size:36rpx;
+	font-weight: 500;
+}
+.buy-team-title.data-v-bb5fe61c{
+	font-size:24rpx;
+}
+

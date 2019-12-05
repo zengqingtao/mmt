@@ -1,0 +1,19 @@
+<!--packageA/logistics/history-arrival.wxml-->
+<view class="arrival-box">
+    <view class="arrival-list-box">
+        <picker class="pick-box" bindchange="bindPickerChange" value="{{index}}" range-key="cityName" range="{{cities_list}}">
+            <view class="row picker-select">
+                <view>{{cities_list[pickerIndex].cityName}}</view>
+                <view class="iconfont icon-btn_sanjiaoxiaojiantoux"></view>
+            </view>
+        </picker>
+    </view>
+</view>
+<view class="header-text">共<i>{{orderInfo.kind_num}}</i>种商品，总计<i>{{orderInfo.total_num}}</i>件</view>
+<view class="order-list">
+    <view class="row model-list" wx:for="{{orderInfo.boxGoodsInfo}}" wx:key="{{index}}">
+        <text class="list-name">{{item.goods_name}}</text>
+        <text class="list-number">x{{item.send_number}}</text>
+    </view>
+</view>
+

@@ -1,0 +1,336 @@
+
+.uni-tab-box.data-v-0750cacd {
+	
+	position: -webkit-sticky;
+	
+	position: sticky;
+	top: 0px;
+	z-index: 1;
+	width: 100%;
+	height: 96rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding: 0 54rpx;
+	font-size: 28rpx;
+	font-weight: 500;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	color: #aaa;
+}
+.uni-tab-item.data-v-0750cacd {
+	width: 33%;
+	text-align: center;
+}
+
+/* 选中后的字体样式 */
+.uni-tab-item-title-active.data-v-0750cacd {
+	font-size: 34rpx;
+	color: #333;
+	line-height: 24rpx;
+	margin-bottom: -16rpx;
+}
+
+/* 选中后显示的黄色横条 */
+.uni-tab-item-title-active.data-v-0750cacd:after {
+	content: "";
+	width: 108rpx;
+	height: 16rpx;
+	background-color: #ffe150;
+	display: block;
+	margin: 0 auto;
+}
+
+/* 选项卡下面的商品大盒子 */
+.product-box.data-v-0750cacd {
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 0 24rpx;
+}
+
+/* 样式布局1 */
+.style1-item.data-v-0750cacd {
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 10rpx;
+	border-bottom: 1rpx solid #f0f0f0;
+}
+
+/* 图片与定时器的盒子 */
+.img-interval-box.data-v-0750cacd {
+	width: 100%;
+	height: 356rpx;
+	position: relative;
+	overflow: hidden;
+	border-radius: 4rpx;
+}
+
+/* 大图片 */
+.img-interval-box-bigImg.data-v-0750cacd {
+	width: 100%;
+	height: 100%;
+}
+
+/* 图片下面的文字大盒子 */
+.title-price-box.data-v-0750cacd {
+	width: 100%;
+	padding: 12rpx 12rpx 12rpx 0;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin-bottom: 10rpx;
+}
+.title-price-box-goodsName.data-v-0750cacd {
+	font-size: 32rpx;
+	color: #303030;
+	overflow: hidden;
+}
+.title-price-box-goodsRemark.data-v-0750cacd {
+	font-size: 24rpx;
+	color: #aaa;
+	min-height: 24rpx;
+}
+
+/* 价格盒子 */
+.style1-price-box.data-v-0750cacd {
+	height: 44rpx;
+	line-height: 44rpx;
+	margin-top: 5rpx;
+	font-weight: 500;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	-webkit-align-items: flex-end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+}
+
+/* “拼团价” */
+.style1-priceTitle.data-v-0750cacd {
+	width: 66rpx;
+	height: 22rpx;
+	line-height: 22rpx;
+	font-size: 18rpx;
+	text-align: center;
+	margin-top: 3rpx;
+	padding: 0 4rpx;
+	color: #eb3c39;
+	background-color: #ffd9d9;
+	display: inline-block;
+}
+
+/* 店价格 */
+.style1-shop-price.data-v-0750cacd {
+	font-size: 32rpx;
+	color: #dc0805;
+	margin-left: 6rpx;
+	line-height: 22rpx;
+}
+
+/* 店价格单位 */
+.style1-shop-price-compnay.data-v-0750cacd {
+	font-size: 24rpx;
+	margin-right: 2rpx;
+}
+
+/* 市场价格 */
+.style1-market-price.data-v-0750cacd {
+	line-height: 22rpx;
+	font-size: 22rpx;
+	font-weight: 500;
+	text-decoration: line-through;
+	color: #aaa;
+	margin-left: 12rpx;
+}
+
+/* 样式布局2 */
+.style2-item.data-v-0750cacd {
+	width: 100%;
+	padding: 20rpx 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	border-bottom: 1rpx solid #f0f0f0;
+}
+
+/* 图片 */
+.style2-item-img.data-v-0750cacd {
+	width: 220rpx;
+	height: 220rpx;
+}
+
+/* 右边的盒子 */
+.style2-item-right-box.data-v-0750cacd {
+	position: relative;
+	padding: 0 0 0 24rpx;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+/* 商品名称 */
+.style2-item-goodsName.data-v-0750cacd {
+	line-height: 36rpx;
+	font-size: 32rpx;
+	color: #303030;
+}
+
+/* 商品评论 */
+.style2-item-goodsRemark.data-v-0750cacd{
+	font-size:24rpx;
+	color:#aaa;
+	margin-top:2rpx;
+	overflow: hidden;
+}
+
+/* 拼团券 */
+.style2-team-ticket-box.data-v-0750cacd{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	    -ms-flex-align:center;
+	        align-items:center;
+	padding-top:6rpx;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.style2-team-ticket.data-v-0750cacd{
+	font-size:18rpx;
+	color:#d8b300;
+	border: 2rpx solid #d8b300;
+	border-radius: 16rpx;
+	padding: 0 12rpx;
+}
+
+/* 拼团价和价格大盒子 */
+.font-price.data-v-0750cacd {
+	position: absolute;
+	bottom: 0;
+	left: 24rpx;
+}
+
+/* 拼团价 */
+.bargain-font.data-v-0750cacd {
+	width: 62rpx;
+	height: 22rpx;
+	line-height: 28rpx;
+	background-color: #ffd9d9;
+	font-size: 18rpx;
+	text-align: center;
+	color: #eb3c39;
+	padding: 0 4rpx;
+	margin-bottom: 5rpx;
+}
+
+/* 价格盒子 */
+.price-box.data-v-0750cacd {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	/* align-items: flex-end; */
+}
+.shop_price.data-v-0750cacd {
+	color: #eb3c39;
+	font-size: 32rpx;
+	line-height: 22rpx;
+	font-weight: 500;
+}
+.shop_price_company.data-v-0750cacd {
+	font-size: 24rpx;
+}
+.market_price.data-v-0750cacd {
+	height: 22rpx;
+	font-size: 22rpx;
+	color: #aaa;
+	font-weight: 500;
+	margin-left: 12rpx;
+	text-decoration: line-through;
+}
+
+/* 立即购买 */
+.now-buy.data-v-0750cacd {
+	width: 144rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	background-color: #eb3c39;
+	color: #fff;
+	font-size: 28rpx;
+	text-align: center;
+	border-radius: 32rpx;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.style1-now-buy.data-v-0750cacd{
+	bottom: 22rpx !important;
+}
+
+/* 提醒我 */
+.remind.data-v-0750cacd{
+	background-color:#ff6100;
+}
+
+/* 底部logo */
+.bottom-logo.data-v-0750cacd {
+	width: 750rpx;
+	padding: 48rpx 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-bottom: 100rpx;
+}
+.bottom-logo-img.data-v-0750cacd {
+	width: 750rpx;
+	height: 28rpx;
+}
+
+/* 商品为空时显示的内容样式 */
+.goodListIsNull.data-v-0750cacd {
+	width: 100%;
+	padding: 90rpx 24rpx;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.goodListIsNull-img.data-v-0750cacd {
+	width: 318rpx;
+	height: 188rpx;
+}
+.goodListIsNull-title.data-v-0750cacd {
+	width: 100%;
+	color: #aaa;
+	font-size: 32rpx;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 44rpx;
+}
+

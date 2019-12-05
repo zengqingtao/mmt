@@ -1,0 +1,86 @@
+
+.fixedBox {
+	position: fixed;
+	background-color: #fff;
+	z-index: 50;
+}
+.fixedBox:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* 温馨提示*/
+.fixedBox>.tips {
+	height: 100rpx;
+	color: #FFB400;
+	font-size: 28rpx;
+	font-weight: 500;
+	padding: 12rpx 24rpx;
+	background-color: #FFFBE6;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/* 选择工厂和名称 */
+.select-city-factory {
+	height: 60rpx;
+	line-height: 60rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 15rpx 50rpx;
+	background-color: #F3F3F3;
+}
+.cityName {
+	font-size: 26rpx;
+	color: #333;
+	margin-left: 26rpx;
+}
+.icon-btn_sanjiaoxiaojiantoux {
+	font-size: 20rpx;
+	padding-left: 8rpx;
+}
+.icon-img_sousuox {
+	color: #555;
+	margin-left: 10rpx;
+}
+.factoryName {
+	margin-left: 20rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	font-size: 26rpx;
+}
+
+/* 竖杆 */
+.select-city-factory .sg {
+	margin-left: 10rpx;
+	font-size: 28rpx;
+	color: #E0E0E0;
+}
+.allFactory_position {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0 32rpx;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.allFactory_position>.allFactory {
+	color: #746B64;
+	font-size: 28rpx;
+}
+.allFactory_position>.position {
+	color: #908E9A;
+	font-size: 24rpx;
+}
+
+/* 工厂列表*/
+.factory_list {
+	padding: 240rpx 0 0 32rpx;
+}
+

@@ -1,0 +1,79 @@
+<view class='container'>
+  <view class='row node-number'>
+    <view class="text" bindtap="showNumberModel">查看商品数量统计</view>
+    <view class="number">
+      <view>订单数：{{boxOrderNumber}}</view>
+      <view class="i" wx:if="{{pageStyle == 1}}">(售后订单数：{{boxBackOrderCount}})</view>
+    </view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{pickerArray}}" wx:if="{{pageStyle == 1}}">
+      <view class="row picker-select">
+        <view>{{pickerArray[pickerIndex]}}</view>
+        <view class="iconfont icon-btn_sanjiaoxiaojiantoux"></view>
+      </view>
+    </picker>
+  </view>
+  <view class="row searchbox">
+    <picker mode="date" class="dataInpt {{screen_show ? 'disabled' : ''}}" value='{{dateValue}}' disabled="{{screen_show ? true : false}}" bindchange="bindTimeChange">{{dateValue == "" ? "选择到货日期" : dateValue}}</picker>
+    <input disabled="{{screen_show?'disabled':''}}" class="searchInput {{screen_show?'search-disabled':''}}" value="{{searchValue}}" type='text' bindinput='searchInput' bindconfirm="searchCifim" placeholder='姓名/手机号/物流单号/商品名称'  placeholder-class="placeholder-font {{screen_show?'placeholder-disabled':''}}">
+      <!--<cover-view class="iconfont icon-btn_guanbianniux clear-input" wx:if="{{is_show_clear}}" catchtap="clearInput"></cover-view>-->
+    </input>
+  </view>
+  <view class="screen-box" wx:if="{{screen_show}}">
+    <view class="screen-item">
+      <view class="screen-msg row">
+        <view class="screen-title">
+          已筛选:
+        </view>
+        <view class="screen-news">
+          <view class="goods-name">
+            {{screem_goods.goods_name}}
+          </view>
+          <view class="goods-num">
+            共<i>{{screen_goods_num}}</i>件
+          </view>
+        </view>
+      </view>
+      <view class="screen-close">
+        <text class="iconfont icon-btn_qiapianguanbianniux close-icon" bindtap="closeScreen"></text>
+      </view>
+    </view>
+  </view>
+  <view class="list-pad">
+    <view class="list-box" wx:for="{{boxOrderInfo}}" wx:key="index" bindtap="goDetail" data-order-sn="{{item.order_sn}}">
+      <view class="list-item">订单号：<i class="color-blue"  catchtap='copyText' data-text="{{item.order_sn}}" data-title="订单号">{{item.order_sn}}</i></view>
+      <view class="list-item">物流单号：<i class="color-blue"  catchtap='copyText' data-text="{{item.delivery_sn}}" data-title="物流单号">{{item.delivery_sn}}</i></view>
+      <view class="list-item">收货人：<i class="color-blue"  catchtap='copyText' data-text="{{item.consignee}}" data-title="收货人">{{item.consignee}}</i></view>
+      <view class="list-item">手机号：
+        <i class="color-blue"  catchtap='copyText' data-text="{{item.mobile}}" data-title="手机号">
+          {{item.mobile}}
+        </i>
+        <view  catchtap="onCall" data-mobile="{{item.mobile}}" class="call-icon">拨打电话</view>
+      </view>
+      <view class="list-item" wx:if="{{pageStyle == 1}}">是否发送取货码：{{item.is_noticed}}</view>
+      <view class="list-item" wx:if="{{pageStyle == 1}}">取货码发送时间：{{item.order_send_time}}</view>
+      <view wx:if="{{item.is_have_back == 1}}" class='list-status'>用户已申请售后</view>
+      <view class="list-btn-box">
+        <button class="list-btn">查看详情</button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="drawer_screen" bindtap="hideNumberModel" wx:if="{{numberModelStatus}}" catchtouchmove="bindtouchmove"></view>
+<view class="number-model-box" wx:if="{{numberModelStatus}}" catchtouchmove="bindtouchmove">
+  <view class="header-text">共<i>{{numberList.length}}</i>种商品，总计<i>{{boxGoodsInfoCount}}</i>件</view>
+  <view class="header-sale-text" wx:if="{{pageStyle==1||boxGoodsBackCount!=0}}">(其中申请售后<i>{{boxGoodsBackCount}}</i>件)
+    <view class="showMore" bindtap="showAfterSale">
+      查看详情
+    </view>
+  </view>
+  <scroll-view class="row model-scroll" scroll-y="true">
+    <view class="row model-list" wx:for="{{numberList}}" wx:key="index" bindtap="showOneSale" data-str="{{item.order_id_str}}" data-item="{{item}}">
+      <text class="list-name {{item.type == 2 ? 'red' : ''}}">{{item.goods_name}}</text>
+      <view class="list-sale"><view class="i" wx:if="{{item.back_num > 0}}">售后{{item.back_num}}件</view></view>
+      <text class="list-number">x{{item.send_number}}</text>
+      <text class="iconfont icon-btn_gerenzhongxinyoujiantoux right-arrow"></text>
+    </view>
+  </scroll-view>
+</view>
+<loading wx:if="{{loadingShow}}"></loading>

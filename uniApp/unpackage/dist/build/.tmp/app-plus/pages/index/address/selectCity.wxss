@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+.icon-btn_shouyedingweix{
+	color:#FFB400;
+}
+.position{
+	margin-left:24rpx;
+}
+.city{
+	width:250rpx;
+	height:60rpx;
+	border:2rpx solid #999999;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-flex-wrap:nowrap;
+	    -ms-flex-wrap:nowrap;
+	        flex-wrap:nowrap;
+}
+.cityName{
+	color: #333;
+	margin-left:10rpx;
+	overflow: hidden;
+	-o-text-overflow:ellipsis;
+	   text-overflow:ellipsis;
+	white-space: nowrap;
+}
+

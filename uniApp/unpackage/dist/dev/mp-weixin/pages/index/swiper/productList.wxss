@@ -1,0 +1,129 @@
+
+.top-image.data-v-3829741e {
+	width: 100%;
+	height: 360rpx;
+}
+/* 商品列表 */
+.goodList.data-v-3829741e{
+	padding:25rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap:wrap;
+	    -ms-flex-wrap:wrap;
+	        flex-wrap:wrap;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.goods-item.data-v-3829741e{
+	width:344rpx;
+	position:relative;
+	background-color:#fff;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 344rpx;
+	    -ms-flex: 0 0 344rpx;
+	        flex: 0 0 344rpx;
+	margin-bottom: 16rpx;
+	border-radius: 8rpx;
+	overflow: hidden;
+}
+.goods-item-bg.data-v-3829741e{
+	width:344rpx;
+	height:344rpx;
+	margin-bottom: 12rpx;
+}
+/* 是否已抢光 */
+.is-enough.data-v-3829741e{
+	width:344rpx;
+	height:344rpx;
+	background-color:rgba(0,0,0,0.36);
+	position:absolute;
+	top:0;
+	border-radius:8rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.is-enough-img.data-v-3829741e{
+	width:176rpx;
+	height:72rpx;
+}
+/* 商品标题 */
+.goods-item-title.data-v-3829741e{
+	width:100%;
+	height:80rpx;
+	line-height:1.5;
+	font-size:28rpx;
+	font-weight:500;
+	color:#555;
+	padding:0 10rpx;
+}
+.priceBox.data-v-3829741e{
+	font-size:32rpx;
+	font-weight:500;
+	padding:0 10rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	    -ms-flex-align:center;
+	        align-items:center;
+}
+.goods-item-market-price.data-v-3829741e{
+	color:#DC0805;
+}
+.goods-item-shop-price.data-v-3829741e{
+	font-size:24rpx;
+	color: #aaa;
+	margin-left:8rpx;
+	text-decoration: line-through;
+}
+/* 底部logo */
+.bottom-logo.data-v-3829741e{
+	width: 750rpx;
+	padding:48rpx 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.bottom-logo-img.data-v-3829741e{
+	width:750rpx;
+	height:28rpx;
+}
+/* 分享按钮 */
+.share-btn.data-v-3829741e{
+	width:88rpx;
+	height:88rpx;
+	position: fixed;
+	bottom: 40rpx;
+	right:20rpx;
+	background-color:transparent;
+}
+.share-btn-img.data-v-3829741e{
+	width:100%;
+	height:100%;
+}
+

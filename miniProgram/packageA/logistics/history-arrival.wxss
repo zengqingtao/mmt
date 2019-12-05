@@ -1,0 +1,75 @@
+/* packageA/logistics/history-arrival.wxss */
+page{
+    background-color: #fff;
+}
+.arrival-box{
+    width: 100%;
+    padding: 20rpx 24rpx;
+    box-sizing: border-box;
+}
+.order-list{
+    padding: 20rpx 24rpx;
+}
+.arrival-list-box{
+    width: 100%;
+    height:70rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2rpx solid #e6e6e6;
+    border-radius: 34rpx;
+}
+.pick-box{
+    width: 100%;
+}
+.picker-select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20rpx;
+    font-size: 30rpx;
+    min-width: 80rpx;
+    height:72rpx;
+
+}
+.header-text{
+    display: flex;
+    text-align: center;
+    font-size: 40rpx;
+    justify-content: center;
+    height: 100rpx;
+    line-height: 100rpx;
+}
+.header-text i{
+    color: #EB3C39;
+    margin: 0 10rpx;
+    font-size: 48rpx;
+}
+.model-list{
+    width: 100%;
+    font-size: 32rpx;
+    padding: 10rpx 24rpx;
+    min-height: 88rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10rpx;
+}
+.model-list:nth-child(2n-1){
+    background-color: #f2f2f2
+}
+.model-list .list-number{
+    width: 25%;
+    text-align: right;
+    color: #EB3C39;
+    font-size: 38rpx;
+}
+.model-list .list-name{
+    width: 75%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-align: left;
+    overflow: hidden;
+
+}

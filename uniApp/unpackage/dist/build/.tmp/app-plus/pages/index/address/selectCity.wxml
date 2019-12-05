@@ -1,0 +1,1 @@
+<view class="uni-container"><view class="position"><view>定位</view><view class="city iconfont icon-btn_shouyedingweix"><text class="cityName">{{cityName}}</text></view></view><view><uni-indexed-list vue-id="1" options="{{list}}" showSelect="{{false}}" data-event-opts="{{[['^click',[['bindClick']]]]}}" bind:click="__e" bind:__l="__l"></uni-indexed-list></view></view>
